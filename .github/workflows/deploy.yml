@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: ./www
+          path: www
     
       - name: Check if www folder exists
         run: |
@@ -58,5 +58,5 @@ jobs:
         uses: actions/deploy-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./www
+          publish_dir: www
       
