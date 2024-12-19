@@ -46,6 +46,14 @@ jobs:
           name: github-pages
           path: ./www
     
+      - name: Check if www folder exists
+        run: |
+            ls -la www
+  
+      - name: Check if there are changes
+        run: |
+            git diff --exit-code || echo "There are changes to commit"
+          
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         env:
