@@ -38,13 +38,13 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --base-href "/ionic-web-app/"
+        run: npm run build -- --base-href=/ionic-web-app/
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: www
+          path: www/browser
     
       - name: Check if www folder exists
         run: |
@@ -58,5 +58,5 @@ jobs:
         uses: actions/deploy-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: www
+          
       
