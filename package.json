@@ -1,8 +1,8 @@
 {
   "name": "ionic-web-app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Sanjeet Kumar",
+  "homepage": "https://sanjeetkumaritoutlook.github.io/ionic-web-app",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
