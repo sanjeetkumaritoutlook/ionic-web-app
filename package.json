@@ -2,7 +2,7 @@
   "name": "ionic-web-app",
   "version": "0.0.1",
   "author": "Sanjeet Kumar",
-  "homepage": "https://sanjeetkumaritoutlook.github.io/ionic-web-app",
+  "homepage": "https://sanjeetkumaritoutlook.github.io",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
